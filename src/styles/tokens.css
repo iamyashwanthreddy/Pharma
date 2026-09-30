@@ -1,0 +1,90 @@
+/* =====================================================================
+   Pharmatoka — design tokens
+   Core colour sampled from the supplied logo: #51244B (aubergine).
+   Typeface matches the logo wordmark: Open Sans (humanist sans),
+   paired with Instrument Serif (editorial italic) and IBM Plex Mono
+   (scientific annotation).
+   ===================================================================== */
+:root {
+  /* Aubergine scale — built around the logo colour (600) */
+  --aub-950: #170915;
+  --aub-900: #22101f;
+  --aub-850: #2c1428;
+  --aub-800: #381a33;
+  --aub-700: #451f40;
+  --aub-600: #51244b;
+  --aub-500: #6a3862;
+  --aub-400: #8c5c84;
+  --aub-300: #b793ae;
+  --aub-200: #dac6d4;
+  --aub-100: #eee4ea;
+
+  /* Paper — warm, slightly rosy neutrals that sit well beside aubergine */
+  --paper: #f6f1ee;
+  --paper-2: #efe7e3;
+  --paper-3: #e6dbd6;
+  --bone: #fbf8f6;
+
+  /* Accents, used sparingly */
+  --blush: #f2b5c9;      /* highlight on aubergine */
+  --cranberry: #b3234c;  /* botanical accent (ellura) */
+  --sage: #a8bba2;       /* leaf detail (Vondberi) */
+  --sage-deep: #56705a;
+
+  /* Ink */
+  --ink: #1d1119;
+  --ink-2: #4a3b45;
+  --ink-3: #7d6d78;
+  --line: rgba(81, 36, 75, 0.14);
+  --line-strong: rgba(81, 36, 75, 0.26);
+  --line-inv: rgba(255, 240, 248, 0.16);
+  --line-inv-strong: rgba(255, 240, 248, 0.3);
+
+  --on-dark: #f8eef3;
+  --on-dark-2: rgba(248, 238, 243, 0.72);
+  --on-dark-3: rgba(248, 238, 243, 0.5);
+
+  /* Type */
+  --font-sans: 'Open Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Instrument Serif', 'Times New Roman', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --fs-mega: clamp(3.4rem, 10.4vw, 10.5rem);
+  --fs-display: clamp(2.9rem, 7.4vw, 7.25rem);
+  --fs-h1: clamp(2.5rem, 5.6vw, 5.25rem);
+  --fs-h2: clamp(2.05rem, 4.2vw, 3.9rem);
+  --fs-h3: clamp(1.45rem, 2.4vw, 2.2rem);
+  --fs-h4: clamp(1.15rem, 1.5vw, 1.35rem);
+  --fs-lead: clamp(1.12rem, 1.55vw, 1.42rem);
+  --fs-body: 1.0625rem;
+  --fs-sm: 0.9375rem;
+  --fs-xs: 0.8125rem;
+  --fs-mono: 0.72rem;
+
+  --track-display: -0.045em;
+  --track-head: -0.035em;
+  --track-mono: 0.08em;
+
+  /* Space */
+  --gutter: clamp(1rem, 4.4vw, 4.5rem);
+  --frame: clamp(0.5rem, 0.9vw, 0.875rem); /* inset of the framed slabs */
+  --section: clamp(5.5rem, 11vw, 11rem);
+  --maxw: 1440px;
+  --radius-slab: clamp(1.25rem, 2.4vw, 2.25rem);
+  --radius-card: clamp(1rem, 1.6vw, 1.5rem);
+  --radius-sm: 0.75rem;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-io: cubic-bezier(0.76, 0, 0.24, 1);
+  --t-fast: 0.25s;
+  --t-med: 0.55s;
+
+  --header-h: 84px;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --header-h: 68px;
+  }
+}
